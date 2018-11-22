@@ -9,7 +9,7 @@ var User = require("../models/user-model");
 var Team = require("../models/team-model");
 var Homepic = require("../models/homepics");
 
-var codes = ['ashcat','arsyvarsy','armogan','ashen','eonkid','cryptickill','incendiary','jadeite','omnioath','wildvortex'];
+var codes = ['any_codes'];
 
 router.get('/upload', (req, res)=>{
 	res.render('upload-pic',{err: null});

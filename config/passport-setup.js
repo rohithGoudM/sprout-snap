@@ -19,8 +19,8 @@ passport.use(
 	new GoogleStrategy({
 	//options for the g strat
 		callbackURL: '/auth/google/redirect',
-		clientID: '279896299448-l9js5jdbj05dum6ltiuh3uu2bb72hmfn.apps.googleusercontent.com',
-		clientSecret: '70BhXXx3GiYgwD9Ucy9e7jJC'
+		clientID: 'CLIENT_ID',
+		clientSecret: 'CLIENT_SECRET'
 	}, (accessToken, refreshToken, profile, done)=>{
 		//passport callback
 		User.findOne({googleId: profile.id}).then((currentUser)=>{
